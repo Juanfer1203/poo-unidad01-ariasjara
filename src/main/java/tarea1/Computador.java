@@ -9,8 +9,9 @@ package tarea1;
  * @author PC-19
  */
 public class Computador {
+    
     String marca;
     String modelo;
     int capacidad;
-    
+    int ram;
 }

@@ -6,13 +6,13 @@ package tarea1;
 
 /**
  *
- * @author PC-19
+ * @author PC-01
  */
-public class Auto {
+public class Teléfono {
     
     String marca;
-    int año;
-    String placa;
+    int memoria;
     String modelo;
+    int numeroCámaras;
     
 }

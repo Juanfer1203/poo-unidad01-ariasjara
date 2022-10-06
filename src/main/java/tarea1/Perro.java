@@ -13,4 +13,5 @@ public class Perro {
     String nombre;
     int edad;
     String raza;
+    String color;
 }
