@@ -21,7 +21,7 @@ public class Tarea01 {
         perro1.nombre="pepe";
         perro1.edad=5;
         perro1.raza="mestizo";
-        perro1.color="café";
+        perro1.color="cafe";
         
         perro2.nombre="locky";
         perro2.edad=4;
@@ -104,17 +104,17 @@ public class Tarea01 {
         ropa1.marca="GAP";
         ropa1.talla="M";
         ropa1.color="Negro";
-        ropa1.material="Algodón";
+        ropa1.material="Algodon";
         
-        ropa1.marca="Nike";
-        ropa1.talla="S";
-        ropa1.color="Azul";
-        ropa1.material="Seda";
+        ropa2.marca="Nike";
+        ropa2.talla="S";
+        ropa2.color="Azul";
+        ropa2.material="Seda";
         
-        ropa1.marca="Adidas";
-        ropa1.talla="L";
-        ropa1.color="Rojo";
-        ropa1.material="Nylon";
+        ropa3.marca="Adidas";
+        ropa3.talla="L";
+        ropa3.color="Rojo";
+        ropa3.material="Nylon";
         
         //----------------------------------------------------------------------
         
@@ -127,110 +127,110 @@ public class Tarea01 {
         teléfono1.modelo="Xperia";
         teléfono1.numeroCámaras=2;
         
-        teléfono1.marca="iPhone";
-        teléfono1.memoria=128;
-        teléfono1.modelo="X";
-        teléfono1.numeroCámaras=1;
+        teléfono2.marca="iPhone";
+        teléfono2.memoria=128;
+        teléfono2.modelo="X";
+        teléfono2.numeroCámaras=1;
         
-        teléfono1.marca="Samsung";
-        teléfono1.memoria=258;
-        teléfono1.modelo="Galaxy";
-        teléfono1.numeroCámaras=3;
+        teléfono3.marca="Samsung";
+        teléfono3.memoria=258;
+        teléfono3.modelo="Galaxy";
+        teléfono3.numeroCámaras=3;
         
         
         //Perro
         
         System.out.println("Mi perro se llama: "+ perro1.nombre + " tiene "
-                + perro1.edad + " años " + ", es un " + perro1.raza +
-                "y es de color " + perro1.color);
+                + perro1.edad + " anos " + ", es un " + perro1.raza +
+                " y es de color " + perro1.color);
         
         System.out.println("Mi perro se llama: "+ perro2.nombre + " tiene "
-                + perro2.edad + " años " + ", es un " + perro2.raza + 
-                "y es de color " + perro2.color);
+                + perro2.edad + " anos " + ", es un " + perro2.raza + 
+                " y es de color " + perro2.color);
                 
                 
         System.out.println("Mi perro se llama: "+ perro3.nombre + " tiene "
-                + perro3.edad + " años " + ", es un " + perro3.raza + 
-                "y es de color " + perro3.color);
+                + perro3.edad + " anos " + ", es un " + perro3.raza + 
+                " y es de color " + perro3.color);
         
         
         //Auto
         
         System.out.println("El auto es de marca " + auto1.marca + ", modelo " 
-                + auto1.modelo+  ", es del año " + auto1.año +
+                + auto1.modelo+  ", es del ano " + auto1.año +
                 ", tiene la placa " + auto1.placa);
         
          System.out.println("El auto es de marca " + auto2.marca + ", modelo " 
-                + auto2.modelo+  ", es del año " + auto2.año +
+                + auto2.modelo+  ", es del ano " + auto2.año +
                 ", tiene la placa " + auto2.placa);
          
           System.out.println("El auto es de marca " + auto3.marca + ", modelo " 
-                + auto3.modelo+  ", es del año " + auto3.año +
+                + auto3.modelo+  ", es del ano " + auto3.año +
                 ", tiene la placa " + auto3.placa);
         
         //Computador
         
         System.out.println("El computador es de marca " + computador1.marca + 
-                "modelo " + computador1.modelo + " tiene una capacidad de " +
-                computador1.capacidad +" gb, con una ram de" + computador1.ram
+                " modelo " + computador1.modelo + " tiene una capacidad de " +
+                computador1.capacidad +" gb, con una ram de " + computador1.ram
                 + "gb" );
         
           System.out.println("El computador es de marca " + computador2.marca + 
-                "modelo " + computador2.modelo + " tiene una capacidad de " +
-                computador2.capacidad +" gb, con una ram de" + computador2.ram
+                " modelo " + computador2.modelo + " tiene una capacidad de " +
+                computador2.capacidad +" gb, con una ram de " + computador2.ram
                 + "gb" );
           
             System.out.println("El computador es de marca " + computador3.marca + 
-                "modelo " + computador3.modelo + " tiene una capacidad de " +
-                computador3.capacidad +" gb, con una ram de" + computador3.ram
+                " modelo " + computador3.modelo + " tiene una capacidad de " +
+                computador3.capacidad +" gb, con una ram de " + computador3.ram
                 + "gb" );
             
         //Teléfono
         
-        System.out.println("El teléfono es de marca"  + teléfono1.marca + 
-                "con una memoria de " + teléfono1.memoria + "gb," +
-                "su modelo es" + teléfono1.modelo + "y tiene " + 
-                teléfono1.numeroCámaras + "cámaras." );
+        System.out.println("El telefono es de marca "  + teléfono1.marca + 
+                " con una memoria de " + teléfono1.memoria + "gb," +
+                "su modelo es " + teléfono1.modelo + "y tiene " + 
+                teléfono1.numeroCámaras + " camara/s." );
         
-        System.out.println("El teléfono es de marca"  + teléfono2.marca + 
-                "con una memoria de " + teléfono2.memoria + "gb," +
-                "su modelo es" + teléfono2.modelo + "y tiene " + 
-                teléfono2.numeroCámaras + "cámaras." );
+        System.out.println("El telefono es de marca "  + teléfono2.marca + 
+                " con una memoria de " + teléfono2.memoria + "gb," +
+                "su modelo es " + teléfono2.modelo + "y tiene " + 
+                teléfono2.numeroCámaras + " camara/s." );
         
-        System.out.println("El teléfono es de marca"  + teléfono3.marca + 
-                "con una memoria de " + teléfono3.memoria + "gb," +
-                "su modelo es" + teléfono3.modelo + "y tiene " + 
-                teléfono3.numeroCámaras + "cámaras." );
+        System.out.println("El telefono es de marca "  + teléfono3.marca + 
+                " con una memoria de " + teléfono3.memoria + "gb," +
+                "su modelo es " + teléfono3.modelo + "y tiene " + 
+                teléfono3.numeroCámaras + " camara/s." );
         
         
         //Persona
         
         System.out.println("Su nombre es " + persona1.nombre + 
-                ", su numero de cédula es " + persona1.cédula + " mide "
-                + persona1.altura + "cm y tiene un peso de" + persona1.peso);
+                ", su numero de cedula es " + persona1.cédula + " mide "
+                + persona1.altura + "cm y tiene un peso de " + persona1.peso + " Kg" );
         
         System.out.println("Su nombre es " + persona2.nombre + 
-                ", su numero de cédula es " + persona2.cédula + " mide "
-                + persona2.altura + "cm y tiene un peso de" + persona2.peso);
+                ", su numero de cedula es " + persona2.cédula + " mide "
+                + persona2.altura + "cm y tiene un peso de " + persona2.peso + " Kg");
          
         System.out.println("Su nombre es " + persona3.nombre + 
-                ", su numero de cédula es " + persona3.cédula + " mide "
-                + persona3.altura + "cm y tiene un peso de" + persona3.peso);
+                ", su numero de cedula es " + persona3.cédula + " mide "
+                + persona3.altura + "cm y tiene un peso de " + persona3.peso+ " Kg");
         
         
         //Ropa
         
         System.out.println("La prenda es de marca " + ropa1.marca +
-                " de talla " + ropa1.talla + "de color " + ropa1.color + 
-                "hecho de " + ropa1.material );
+                " de talla " + ropa1.talla + " de color " + ropa1.color + 
+                " hecho de " + ropa1.material );
           
         System.out.println("La prenda es de marca " + ropa2.marca +
-                " de talla " + ropa2.talla + "de color " + ropa2.color + 
-                "hecho de " + ropa2.material );
+                " de talla " + ropa2.talla + " de color " + ropa2.color + 
+                " hecho de " + ropa2.material );
          
         System.out.println("La prenda es de marca " + ropa3.marca +
-                " de talla " + ropa3.talla + "de color " + ropa3.color + 
-                "hecho de " + ropa3.material );
+                " de talla " + ropa3.talla + " de color " + ropa3.color + 
+                " hecho de " + ropa3.material );
         
     }
 }
