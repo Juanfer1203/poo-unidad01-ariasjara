@@ -43,33 +43,35 @@ public class Tarea01 {
         var auto8 = new Auto();
         
         auto1.marca="Hyundai";
-        auto1.año=2015;
+        auto1.year=2015;
         auto1.placa="ABC123";
         auto1.modelo="Tucson";
         
         auto2.marca="Kya";
-        auto2.año=2005;
+        auto2.year=2005;
         auto2.placa="AOP567";
         auto2.modelo="Picanto";
         
         auto3.marca="Toyota";
-        auto3.año=2018;
-        auto3.placa="PPD234";
+        auto3.year=2018;
+        auto3.placa="LPD234";
         auto3.modelo="Yaris";
         
-          auto5.placa="ADD2402";
+          auto5.placa="UDD2402";
         auto5.marca="Toyota";
         auto5.nombrePropietario="Jose Tapia";
-         
+         auto5.year=2018;
+        auto5.precio=10000;
         
-        
-        auto7.placa="AKJ2345";
+        auto7.placa="PKJ2345";
         auto7.marca="Jetour";
         auto7.nombrePropietario="Juan Galarza";
+        auto7.precio=10000;
         
         auto8.placa="ABA3345";
         auto8.marca="Mercedes Benz";
         auto8.nombrePropietario="Daniel Martinez";
+        auto8.precio=10000;
         //----------------------------------------------------------------------
         
         var computador1= new Computador();
@@ -174,26 +176,42 @@ public class Tarea01 {
         //Auto
         
         System.out.println("El auto es de marca " + auto1.marca + ", modelo " 
-                + auto1.modelo+  ", es del ano " + auto1.año +
+                + auto1.modelo+  ", es del ano " + auto1.year +
                 ", tiene la placa " + auto1.placa);
         
          System.out.println("El auto es de marca " + auto2.marca + ", modelo " 
-                + auto2.modelo+  ", es del ano " + auto2.año +
+                + auto2.modelo+  ", es del ano " + auto2.year +
                 ", tiene la placa " + auto2.placa);
          
           System.out.println("El auto es de marca " + auto3.marca + ", modelo " 
-                + auto3.modelo+  ", es del ano " + auto3.año +
+                + auto3.modelo+  ", es del ano " + auto3.year +
                 ", tiene la placa " + auto3.placa);
           
         
         System.out.println(auto5.mostrarInfo()+
-                " el país de origen de la marca es "+ auto5.getPaisMarca());
+                " el país de origen de la marca es "+ auto5.getPaisMarca()+
+                " y la provincia es: " + auto5.getProvincia()+ 
+                " el numero de continente es: " + auto5.getNumeroContinente() 
+                + "el auto tiene" + auto5.calcularEdad(2022)+" años");
         
         System.out.println(auto7.mostrarInfo()+
-                " el país de origen de la marca es "+ auto7.getPaisMarca());
+                " el país de origen de la marca es "+ auto7.getPaisMarca()+
+                " y la provincia es: " + auto7.getProvincia()+ 
+                " el numero de continente es: " + auto7.getNumeroContinente());
         
         System.out.println(auto8.mostrarInfo()+
-                " el país de origen de la marca es "+ auto8.getPaisMarca());
+                " el país de origen de la marca es "+ auto8.getPaisMarca()+
+                " y la provincia es: " + auto8.getProvincia()+ 
+                ". El numero de continente es: " + auto8.getNumeroContinente()+
+                ". El auto tiene " + auto5.calcularEdad(2022) + " anos."+
+                " La depreciacion es de: " + 
+                auto8.calcularDepreciacion(2022) +
+                ". El costo de la matricula es de: "
+                + auto8.calcularCostoMatricula(2022) + ". " +
+                auto8.sePuedeAsegurar(2022)+ " se puede asegurar y" +
+                " el precio final es de: " + auto8.calcularIVA());
+     
+        
         
         
         //Computador

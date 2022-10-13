@@ -11,10 +11,15 @@ package tarea1;
 public class Auto {
     
     String marca;
-    int año;
+    int year;
     String placa;
     String modelo;
     String nombrePropietario;
+    String color;
+    int precio;
+            
+    
+    
     
       public String mostrarInfo(){
         
@@ -26,6 +31,114 @@ public class Auto {
         
     }
     
+      
+      public String getProvincia(){
+          
+          var retorno = "";
+          
+          var primeraLetra="";
+          
+          primeraLetra = this.placa.substring(0,1);         
+          switch(primeraLetra){
+              
+              case "A":
+                  retorno= "Azuay";
+                  break;
+              case "P":
+                  retorno= "Pichincha";
+                  break;
+              case "G":
+                  retorno= "Guayas";
+                  break;
+              case "U":
+                  retorno= "Cañar";
+                  break;
+              default:
+                  retorno= "Provincia no definida";
+                      
+                      
+                      
+              
+          }
+          return retorno;
+      }
+      
+       public int getNumeroContinente(){
+        
+          var retorno = 0;
+          var marcaPais = this.getPaisMarca();
+          switch(marcaPais){
+              
+              case "EE.UU":
+                  retorno=2;
+              break;   
+              
+              case "Japon":
+                  retorno=3;
+              break;   
+              
+              default:
+                  retorno=0;
+              break;   
+              
+          }
+          
+          
+          return retorno;
+          
+      }
+       
+    public double calcularIVA(){
+
+        var retorno = 0.0d;
+        
+        retorno=this.precio*0.12;
+        
+        return retorno;
+    }   
+    public int calcularEdad(int yearActual){
+    var retorno=0;
+    
+    retorno=yearActual-this.year;
+    
+    return retorno;
+    
+    }
+    // 10% cada año de uso
+    //la depreciacion no puede exceder el precio
+    public double calcularDepreciacion(int yearActual){
+    var retorno = 0.0d;
+    var edad=this.calcularEdad(yearActual);
+    retorno =edad*0.1*this.precio;
+    
+    
+    return retorno;
+    }   
+    public double calcularCostoMatricula(int yearActual){
+    var retorno=0.0d;
+    var edad=this.calcularEdad(yearActual);
+    
+     retorno=edad*0.1;
+     return retorno;
+    
+    } 
+      //edad 0-5 precio de 10000 SI
+      //edad 10-15 precio de 10000 a 20000 SI 
+      //edad mayor a 15 y de 20000 a 30000  SI 
+      //edad mayor a 15 NO 
+      public boolean sePuedeAsegurar(int yearActual){
+      var retorno=false;
+      
+     var edad=this.calcularEdad(yearActual);
+     if(edad<=5 && this.precio<10000)
+         {
+      retorno=true;
+         }else{
+      
+      } 
+    return retorno;
+      }
+      
     public String getPaisMarca(){
         var retorno = "";
         
