@@ -37,6 +37,10 @@ public class Tarea01 {
         var auto1= new Auto();
         var auto2= new Auto();
         var auto3= new Auto();
+        var auto5 = new Auto();
+        var auto6 = new Auto();
+        var auto7 = new Auto();
+        var auto8 = new Auto();
         
         auto1.marca="Hyundai";
         auto1.año=2015;
@@ -53,6 +57,19 @@ public class Tarea01 {
         auto3.placa="PPD234";
         auto3.modelo="Yaris";
         
+          auto5.placa="ADD2402";
+        auto5.marca="Toyota";
+        auto5.nombrePropietario="Jose Tapia";
+         
+        
+        
+        auto7.placa="AKJ2345";
+        auto7.marca="Jetour";
+        auto7.nombrePropietario="Juan Galarza";
+        
+        auto8.placa="ABA3345";
+        auto8.marca="Mercedes Benz";
+        auto8.nombrePropietario="Daniel Martinez";
         //----------------------------------------------------------------------
         
         var computador1= new Computador();
@@ -167,6 +184,17 @@ public class Tarea01 {
           System.out.println("El auto es de marca " + auto3.marca + ", modelo " 
                 + auto3.modelo+  ", es del ano " + auto3.año +
                 ", tiene la placa " + auto3.placa);
+          
+        
+        System.out.println(auto5.mostrarInfo()+
+                " el país de origen de la marca es "+ auto5.getPaisMarca());
+        
+        System.out.println(auto7.mostrarInfo()+
+                " el país de origen de la marca es "+ auto7.getPaisMarca());
+        
+        System.out.println(auto8.mostrarInfo()+
+                " el país de origen de la marca es "+ auto8.getPaisMarca());
+        
         
         //Computador
         
