@@ -17,6 +17,7 @@ public class Auto {
     String nombrePropietario;
     String color;
     int precio;
+    int cilindraje;
             
     
     
@@ -165,16 +166,70 @@ public class Auto {
                 
             
    }
-    
-   }
-    
-    
- 
-   
-
-   
+            
+            
+    }
     return retorno;
     }
+    
+    public double calcularTasaSolidaria(int yearActual, double limitePrecio){
         
-
-}
+        var retorno=0.0d;
+        
+        var edad= this.calcularEdad(yearActual);
+        
+            if ((edad>=0) && (edad<=5)&&(cilindraje>1500)){
+                retorno=precio*0.15;
+        }
+            if ((edad>=0) && (edad<=5)&&(cilindraje>1500)&&(cilindraje<2000)){
+                retorno=precio*0.20;
+        }
+            if ((edad>=0) && (edad<=5)&&(cilindraje>2000)){
+                retorno=precio*0.25;
+        }
+            if ((edad>=5) && (edad<=15)&&(cilindraje<1500)){
+                retorno=precio*0.10;
+        }
+            if ((edad>=5) && (edad<=15)&&(cilindraje>1500)&&(cilindraje<2000)){
+                retorno=precio*0.15;
+        }
+            if ((edad>=5) && (edad<=15)&&(cilindraje>2000)){
+                retorno=precio*0.18;
+        }
+            if ((edad>20)){
+                retorno=precio*0;
+        
+        }
+            return retorno;
+    }
+    
+    public boolean esPlacaValida(){
+    var retorno = false;
+    var longitud =this.placa.length();
+    if(longitud==7){
+        var caracter1=this.placa.charAt(0);
+        var caracter2=this.placa.charAt(1);
+        var caracter3=this.placa.charAt(2);
+        var caracter4=this.placa.charAt(3);
+        var caracter5=this.placa.charAt(4);
+        var caracter6=this.placa.charAt(5);
+        var caracter7=this.placa.charAt(6);
+     
+        if(Character.isDigit(caracter7)&&Character.isDigit(caracter6)&&
+                Character.isDigit(caracter5)&& Character.isDigit(caracter4)&&
+                Character.isLetter(caracter3)&&Character.isLetter(caracter2)&&
+                Character.isLetter(caracter1)){
+            retorno= true;}
+        else {
+            retorno=false;
+        }
+    }
+    
+    
+    
+    
+    return retorno;
+    }
+    
+}        
+     
